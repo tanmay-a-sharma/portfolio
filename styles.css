@@ -1,3 +1,7 @@
+:root {
+    --teal-color: teal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +48,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: var(--teal-color);
 }
 
 /* Main Content Styles */
@@ -82,5 +86,106 @@ main {
 }
 
 .footer-link:hover {
+    color: var(--teal-color);
+}
+
+/* Thoughts Page Styles */
+.thoughts-title {
     color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.thought-item {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #111;
+}
+
+.thought-item h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.thought-item .author,
+.thought-item .authors {
+    color: #808080;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.thought-item .description {
+    color: #808080;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.paper-link,
+.external-link {
+    color: var(--teal-color);
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: border-color 0.3s;
+}
+
+.paper-link:hover,
+.external-link:hover {
+    border-color: var(--teal-color);
+}
+
+/* For embedded tweets */
+.tweet {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.tweet blockquote {
+    margin: 0 !important; /* Override Twitter's default margins */
+}
+
+/* Update any links within descriptions */
+.thought-item .description a {
+    color: var(--teal-color);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.thought-item .description a:hover {
+    opacity: 0.7;
+}
+
+/* Keep the MultiOn link in main text teal */
+.main-text a {
+    color: var(--teal-color);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.main-text a:hover {
+    opacity: 0.7;
+}
+
+/* For Spotify embed */
+.spotify {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.spotify iframe {
+    margin: 0;
+    width: 100%;
 } 
